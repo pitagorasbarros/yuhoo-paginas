@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · Followup</title>
+<meta name="description" content="Como o Followup trata dados pessoais, com base na LGPD.">
+<style>
+  :root {
+    --color-canvas:#F7F6F3; --color-surface:#FFFFFF; --color-sunken:#EFEDE7;
+    --color-border:#E4E1DA; --color-border-strong:#948E81;
+    --color-text:#1C1B18; --color-text-2:#5E5A52; --color-text-3:#736E64;
+    --color-accent:#0F5C63; --color-accent-hover:#0B4A50; --color-accent-soft:#E3EFEF;
+    --color-warning-text:#7A4F00; --color-warning-bg:#FAF1DC;
+    --font-sans:'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono:'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-canvas:#141412; --color-surface:#1C1B19; --color-sunken:#111110;
+      --color-border:#2E2C28; --color-border-strong:#6B665C;
+      --color-text:#EDEBE6; --color-text-2:#A8A397; --color-text-3:#8A857A;
+      --color-accent:#4FA8AC; --color-accent-hover:#6BBBBE; --color-accent-soft:#173537;
+      --color-warning-text:#E2B45C; --color-warning-bg:#33270F;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { overflow-wrap: break-word; margin: 0; background: var(--color-canvas); color: var(--color-text); font-family: var(--font-sans); font-size: 15px; line-height: 24px; }
+  .page { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header.brand { display: flex; align-items: center; gap: 12px; padding-bottom: 24px; border-bottom: 1px solid var(--color-border); }
+  .logo { font-weight: 600; font-size: 20px; letter-spacing: -0.03em; color: var(--color-text); text-decoration: none; }
+  .symbol { width: 32px; height: 32px; flex: none; }
+  h1 { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.015em; margin: 32px 0 8px; }
+  .meta { font-family: var(--font-mono); font-size: 13px; line-height: 18px; color: var(--color-text-3); margin: 0 0 24px; }
+  .lead { color: var(--color-text-2); margin: 0 0 24px; }
+  h2 { font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -0.01em; margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--color-border); }
+  h3 { font-size: 15px; line-height: 20px; font-weight: 600; margin: 24px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--color-accent); text-underline-offset: 2px; }
+  a:hover { color: var(--color-accent-hover); }
+  a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; border-radius: 4px; }
+  strong { font-weight: 600; }
+  .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; padding: 16px; margin: 0 0 16px; }
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+  .note { background: var(--color-accent-soft); border-radius: 8px; padding: 16px; margin: 0 0 16px; }
+  .table-wrap { overflow-x: auto; margin: 0 0 16px; border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 20px; }
+  th { background: var(--color-sunken); text-align: left; font-weight: 500; font-size: 13px; color: var(--color-text-2); padding: 8px 12px; }
+  td { padding: 10px 12px; border-top: 1px solid var(--color-border); vertical-align: top; }
+  .preencher { background: var(--color-warning-bg); color: var(--color-warning-text); font-family: var(--font-mono); font-size: 13px; font-weight: 500; padding: 1px 6px; border-radius: 4px; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+  nav.toc li { margin: 0 0 4px; break-inside: avoid; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--color-border); color: var(--color-text-3); font-size: 13px; line-height: 20px; }
+  footer a { margin-right: 16px; }
+  @media (max-width: 560px) { nav.toc ol { columns: 1; } }
+  @media (min-width: 768px) { .page { padding: 48px 32px 64px; } body { font-size: 15px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="brand">
+    <svg class="symbol" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1C1B18"/><line x1="7" y1="16" x2="25" y2="16" stroke="#5E5A52" stroke-width="1"/><circle cx="9" cy="16" r="3" fill="#F7F6F3"/><circle cx="16" cy="16" r="3" fill="#F7F6F3"/><circle cx="23" cy="16" r="2.5" fill="#1C1B18" stroke="#4FA8AC" stroke-width="1.5"/></svg>
+    <a class="logo" href="https://yuhoo.xyz">followup</a>
+  </header>
+
+  <main>
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Vigente desde 01/10/2026 · Versão 1.0</p>
+    <p class="lead">Esta política explica quais dados pessoais o Followup usa, por que usa, com quem compartilha e como você pode exercer seus direitos pela Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).</p>
+
+    <nav class="toc card" aria-label="Nesta página">
+      <ol>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#papeis">Quem decide sobre cada dado</a></li>
+        <li><a href="#dados">Quais dados usamos</a></li>
+        <li><a href="#finalidades">Para que usamos e base legal</a></li>
+        <li><a href="#meta">Integração com a Meta</a></li>
+        <li><a href="#whatsapp">WhatsApp e outros canais</a></li>
+        <li><a href="#armazenamento-local">Cookies e armazenamento no navegador</a></li>
+        <li><a href="#compartilhamento">Com quem compartilhamos</a></li>
+        <li><a href="#retencao">Por quanto tempo guardamos</a></li>
+        <li><a href="#direitos">Seus direitos e como exercer</a></li>
+        <li><a href="#seguranca">Segurança</a></li>
+        <li><a href="#encarregado">Encarregado e contato</a></li>
+        <li><a href="#mudancas">Mudanças nesta política</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="quem-somos">1. Quem somos</h2>
+    <p>O Followup é uma central de acompanhamento comercial com CRM para imobiliárias. Ele organiza leads, tarefas de retorno, cadências de contato e relatórios da equipe de vendas.</p>
+    <div class="card">
+      <p><strong>YUHOO NET LTDA</strong><br>
+      CNPJ 12.898.470/0001-01<br>
+      Endereço: <mark class="preencher">[PREENCHER]</mark><br>
+      E-mail: <a href="mailto:hello@yuhoo.xyz">hello@yuhoo.xyz</a><br>
+      Site: <a href="https://yuhoo.xyz">https://yuhoo.xyz</a></p>
+    </div>
+
+    <h2 id="papeis">2. Quem decide sobre cada dado</h2>
+    <p>O Followup é usado por empresas, como imobiliárias e incorporadoras, que contratam o serviço. Por isso existem dois papéis diferentes:</p>
+    <ul>
+      <li><strong>Dados de quem usa o sistema</strong> (proprietários, gestores, corretores e demais pessoas da equipe): a YUHOO é a <strong>controladora</strong>. Nós decidimos como esses dados são tratados para manter sua conta funcionando.</li>
+      <li><strong>Dados dos leads e clientes da imobiliária</strong> (pessoas interessadas em imóveis): a <strong>imobiliária que contratou o Followup é a controladora</strong>. Ela decide quem cadastra, como contata e por quanto tempo guarda. A YUHOO atua como <strong>operadora</strong> e trata esses dados só para prestar o serviço, segundo as instruções da imobiliária.</li>
+    </ul>
+    <div class="note">
+      <p><strong>Você é um lead e quer saber sobre seus dados?</strong> O melhor caminho é falar com a imobiliária que entrou em contato com você. Se preferir, escreva para <a href="mailto:hello@yuhoo.xyz">hello@yuhoo.xyz</a>. Nós encaminhamos o pedido à imobiliária responsável e ajudamos a atendê-lo.</p>
+    </div>
+
+    <h2 id="dados">3. Quais dados usamos</h2>
+
+    <h3>3.1 De quem usa o sistema</h3>
+    <ul>
+      <li><strong>Cadastro:</strong> nome, e-mail, senha (guardada de forma cifrada, nunca em texto aberto), empresa, papel (proprietário, gestor, administrador, operador ou marketing) e equipe.</li>
+      <li><strong>Convites:</strong> e-mail de quem foi convidado, papel, equipe e quem convidou.</li>
+      <li><strong>Uso do sistema:</strong> tarefas concluídas, tentativas de contato registradas, mudanças de etapa, exportações e outras ações. Elas ficam registradas com nome, papel, data e hora de quem fez.</li>
+      <li><strong>Acesso:</strong> registros técnicos de login e de acesso, como data, hora e endereço IP, gerados pelo nosso provedor de autenticação.</li>
+      <li><strong>Conexão com a Meta</strong> (só para quem conecta a integração): nome e identificador da conta, páginas e formulários autorizados e as chaves de acesso fornecidas pela Meta.</li>
+    </ul>
+
+    <h3>3.2 Dos leads e clientes da imobiliária</h3>
+    <p>Esses dados entram de três formas: cadastro manual pela equipe, importação de planilha ou recebimento automático dos formulários de anúncios da Meta.</p>
+    <ul>
+      <li><strong>Identificação e contato:</strong> nome, telefone ou WhatsApp, e-mail, perfil do Instagram e perfil do LinkedIn.</li>
+      <li><strong>Interesse no imóvel</strong>, quando a imobiliária coleta: empreendimento de interesse, tipo de imóvel, prazo de compra, renda familiar, valor de entrada disponível e forma de pagamento ou financiamento.</li>
+      <li><strong>Campos personalizados</strong> criados pela imobiliária e observações livres escritas pela equipe.</li>
+      <li><strong>Origem:</strong> plataforma, campanha, conjunto de anúncios, anúncio, formulário, parâmetros UTM e data de entrada.</li>
+      <li><strong>Respostas de formulários da Meta:</strong> as respostas que a pessoa enviou no formulário do anúncio no Facebook ou no Instagram.</li>
+      <li><strong>Histórico de atendimento:</strong> tentativas de contato com canal, resultado, data e hora; tarefas; etapa no funil; motivo de perda; trechos de conversa ou arquivos anexados pela equipe como evidência.</li>
+      <li><strong>Privacidade:</strong> autorização ou recusa de contato (opt in e opt out), finalidade e base legal informadas pela imobiliária e lista de contatos que não devem ser procurados.</li>
+    </ul>
+    <p>O Followup não pede CPF, documentos, dados de cartão nem dados de saúde. Se a equipe da imobiliária escrever informações desse tipo em observações ou campos personalizados, isso é responsabilidade dela.</p>
+
+    <h2 id="finalidades">4. Para que usamos e com qual base legal</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Finalidade</th><th>Base legal (LGPD, art. 7º)</th></tr></thead>
+        <tbody>
+          <tr><td>Criar e manter sua conta, permitir o login e enviar convites e e-mails de redefinição de senha</td><td>Execução de contrato</td></tr>
+          <tr><td>Prestar o serviço à imobiliária: organizar leads, tarefas, cadências e relatórios</td><td>Execução de contrato com a imobiliária. Para os dados dos leads, a base é definida pela imobiliária, que é a controladora</td></tr>
+          <tr><td>Receber leads dos formulários de anúncios da Meta, quando a imobiliária conecta a integração</td><td>Execução de contrato com a imobiliária</td></tr>
+          <tr><td>Manter o registro de quem fez o quê (trilha de auditoria) e respeitar pedidos de não contato</td><td>Cumprimento de obrigação legal e exercício regular de direitos</td></tr>
+          <tr><td>Guardar registros de acesso ao sistema</td><td>Cumprimento de obrigação legal (Marco Civil da Internet, art. 15)</td></tr>
+          <tr><td>Proteger o sistema contra fraudes e acessos indevidos e corrigir falhas</td><td>Legítimo interesse</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Não vendemos dados pessoais. Não usamos os dados dos leads para fins próprios da YUHOO, como publicidade ou formação de bases de contato.</p>
+
+    <h2 id="meta">5. Integração com a Meta (Facebook e Instagram)</h2>
+    <p>A imobiliária pode conectar suas páginas do Facebook e do Instagram para que os leads dos anúncios cheguem direto ao Followup. Quando isso acontece:</p>
+    <ul>
+      <li>A pessoa da imobiliária autoriza a conexão numa janela de login da própria Meta. O Followup recebe o nome e o identificador da conta, a lista de páginas e formulários e chaves de acesso.</li>
+      <li>Quando alguém preenche um formulário de anúncio, a Meta avisa o Followup, que busca as respostas desse formulário e os dados da campanha e do anúncio.</li>
+      <li>As chaves de acesso ficam guardadas no servidor, fora do alcance de qualquer usuário. Elas são apagadas quando a imobiliária desconecta a integração.</li>
+      <li>O Followup usa os dados recebidos da Meta só para entregar o lead à equipe da imobiliária. Não usa esses dados para outras finalidades nem os repassa a terceiros.</li>
+    </ul>
+    <p>O tratamento feito pela própria Meta segue a <a href="https://www.facebook.com/privacy/policy/">Política de Privacidade da Meta</a>.</p>
+
+    <h2 id="whatsapp">6. WhatsApp, ligações e outros canais</h2>
+    <p>O Followup não se conecta ao WhatsApp, ao telefone nem às caixas de e-mail da equipe. Os botões de contato apenas abrem o aplicativo do próprio corretor (WhatsApp, discador, e-mail, Instagram ou LinkedIn). O Followup não lê nem guarda essas conversas. Fica registrado só o que a equipe anota no sistema, como o resultado da tentativa ou um trecho colado como evidência.</p>
+
+    <h2 id="armazenamento-local">7. Cookies e armazenamento no navegador</h2>
+    <p>O Followup não usa cookies de publicidade nem ferramentas de análise de navegação. No seu navegador ficam guardados apenas:</p>
+    <ul>
+      <li>a sessão de login, para você não precisar entrar de novo a cada página;</li>
+      <li>preferências de uso: tema claro ou escuro, empresa selecionada, menu recolhido e forma de exibir o CRM.</li>
+    </ul>
+    <p>Na tela de integrações, ao conectar a Meta, o sistema carrega o kit de login da Meta, configurado para não gravar cookies próprios do Followup. A janela de login é da Meta e segue as regras dela.</p>
+
+    <h2 id="compartilhamento">8. Com quem compartilhamos</h2>
+    <p>Só compartilhamos dados com quem precisa deles para o serviço funcionar:</p>
+    <ul>
+      <li><strong>Supabase</strong>: provedor de banco de dados, autenticação, armazenamento de arquivos e funções do servidor. Os dados ficam em servidores na região <mark class="preencher">[PREENCHER]</mark>.</li>
+      <li><strong>Provedor de hospedagem do site</strong>: <mark class="preencher">[PREENCHER]</mark>.</li>
+      <li><strong>Meta Platforms</strong>: só quando a imobiliária conecta a integração, para receber os leads dos anúncios.</li>
+      <li><strong>Provedor de envio de e-mails</strong> do sistema, usado para convites e redefinição de senha: <mark class="preencher">[PREENCHER]</mark>.</li>
+      <li><strong>Autoridades</strong>: quando houver obrigação legal ou ordem judicial.</li>
+    </ul>
+    <p>Dentro de cada imobiliária, o acesso depende do papel de cada pessoa. Uma empresa nunca vê os dados de outra.</p>
+    <p>Alguns desses provedores podem guardar dados fora do Brasil. Nesses casos, a transferência segue o que a LGPD permite (art. 33), com contratos que exigem nível de proteção adequado.</p>
+
+    <h2 id="retencao">9. Por quanto tempo guardamos</h2>
+    <ul>
+      <li><strong>Conta de usuário:</strong> enquanto a pessoa fizer parte de uma empresa cliente e o contrato estiver ativo.</li>
+      <li><strong>Dados dos leads:</strong> pelo tempo que a imobiliária decidir, enquanto o contrato estiver ativo. Ao fim do contrato, os dados são apagados em até <mark class="preencher">[PREENCHER]</mark> dias, salvo pedido de exportação da imobiliária antes disso.</li>
+      <li><strong>Registros de acesso:</strong> por no mínimo 6 meses, como exige o Marco Civil da Internet.</li>
+      <li><strong>Trilha de auditoria e pedidos de não contato:</strong> enquanto a conta da imobiliária existir, porque servem de prova de que o tratamento foi correto e de que a recusa da pessoa foi respeitada.</li>
+      <li><strong>Chaves de acesso da Meta:</strong> até a desconexão da integração ou o fim da validade dada pela Meta.</li>
+    </ul>
+
+    <h2 id="direitos">10. Seus direitos e como exercer</h2>
+    <p>Pela LGPD (art. 18), você pode pedir:</p>
+    <ul>
+      <li>confirmação de que tratamos seus dados e acesso a eles;</li>
+      <li>correção de dados incompletos, errados ou desatualizados;</li>
+      <li>anonimização, bloqueio ou exclusão de dados desnecessários ou tratados em desacordo com a lei;</li>
+      <li>portabilidade dos dados para outro fornecedor;</li>
+      <li>exclusão dos dados tratados com base no seu consentimento;</li>
+      <li>informação sobre com quem compartilhamos seus dados;</li>
+      <li>revogação do consentimento e informação sobre as consequências de não consentir;</li>
+      <li>revisão de decisões tomadas só por meios automatizados.</li>
+    </ul>
+    <p><strong>Como pedir:</strong> envie um e-mail para <a href="mailto:hello@yuhoo.xyz">hello@yuhoo.xyz</a> dizendo qual direito quer exercer e o e-mail ou telefone ligado aos seus dados. Podemos pedir alguma confirmação de identidade antes de atender, para proteger você. Respondemos em até 15 dias.</p>
+    <p>Para pedir a exclusão, veja o passo a passo em <a href="exclusao-de-dados.html">Exclusão de dados</a>.</p>
+    <p>Se os dados forem de um lead, a decisão final é da imobiliária controladora. Nós encaminhamos o pedido a ela e ajudamos a atendê-lo. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD) em <a href="https://www.gov.br/anpd">gov.br/anpd</a>.</p>
+
+    <h2 id="seguranca">11. Segurança</h2>
+    <ul>
+      <li>Conexões sempre cifradas (HTTPS).</li>
+      <li>Senhas guardadas de forma cifrada pelo provedor de autenticação.</li>
+      <li>Separação entre empresas no próprio banco de dados: cada pessoa só acessa os dados da empresa da qual faz parte, conforme seu papel.</li>
+      <li>Arquivos de evidência guardados em área privada, só acessível a membros da empresa.</li>
+      <li>Chaves de integração guardadas no servidor, sem acesso pela interface.</li>
+      <li>Trilha de auditoria que ninguém pode alterar ou apagar, nem os administradores.</li>
+    </ul>
+    <p>Nenhum sistema é totalmente imune a falhas. Se houver um incidente de segurança que possa trazer risco relevante, avisaremos as pessoas afetadas e a ANPD, como manda a lei.</p>
+
+    <h2 id="encarregado">12. Encarregado e contato</h2>
+    <div class="card">
+      <p><strong>Encarregado pelo tratamento de dados (DPO):</strong> <mark class="preencher">[PREENCHER]</mark><br>
+      E-mail: <a href="mailto:hello@yuhoo.xyz">hello@yuhoo.xyz</a><br>
+      YUHOO NET LTDA · CNPJ 12.898.470/0001-01<br>
+      Endereço: <mark class="preencher">[PREENCHER]</mark></p>
+    </div>
+
+    <h2 id="mudancas">13. Mudanças nesta política</h2>
+    <p>Podemos atualizar esta política quando o Followup mudar ou a lei exigir. A data de vigência no topo sempre mostra a versão atual. Mudanças importantes serão avisadas dentro do sistema ou por e-mail.</p>
+  </main>
+
+  <footer>
+    <p><a href="privacidade.html">Política de Privacidade</a><a href="termos.html">Termos de Uso</a><a href="exclusao-de-dados.html">Exclusão de dados</a></p>
+    <p>Followup · YUHOO NET LTDA · CNPJ 12.898.470/0001-01</p>
+  </footer>
+</div>
+</body>
+</html>
