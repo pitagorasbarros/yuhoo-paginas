@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exclusão de dados · Followup</title>
+<meta name="description" content="Como pedir a exclusão dos seus dados pessoais do Followup.">
+<style>
+  :root {
+    --color-canvas:#F7F6F3; --color-surface:#FFFFFF; --color-sunken:#EFEDE7;
+    --color-border:#E4E1DA; --color-border-strong:#948E81;
+    --color-text:#1C1B18; --color-text-2:#5E5A52; --color-text-3:#736E64;
+    --color-accent:#0F5C63; --color-accent-hover:#0B4A50; --color-accent-soft:#E3EFEF;
+    --color-warning-text:#7A4F00; --color-warning-bg:#FAF1DC;
+    --font-sans:'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono:'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-canvas:#141412; --color-surface:#1C1B19; --color-sunken:#111110;
+      --color-border:#2E2C28; --color-border-strong:#6B665C;
+      --color-text:#EDEBE6; --color-text-2:#A8A397; --color-text-3:#8A857A;
+      --color-accent:#4FA8AC; --color-accent-hover:#6BBBBE; --color-accent-soft:#173537;
+      --color-warning-text:#E2B45C; --color-warning-bg:#33270F;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { overflow-wrap: break-word; margin: 0; background: var(--color-canvas); color: var(--color-text); font-family: var(--font-sans); font-size: 15px; line-height: 24px; }
+  .page { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header.brand { display: flex; align-items: center; gap: 12px; padding-bottom: 24px; border-bottom: 1px solid var(--color-border); }
+  .logo { font-weight: 600; font-size: 20px; letter-spacing: -0.03em; color: var(--color-text); text-decoration: none; }
+  .symbol { width: 32px; height: 32px; flex: none; }
+  h1 { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.015em; margin: 32px 0 8px; }
+  .meta { font-family: var(--font-mono); font-size: 13px; line-height: 18px; color: var(--color-text-3); margin: 0 0 24px; }
+  .lead { color: var(--color-text-2); margin: 0 0 24px; }
+  h2 { font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -0.01em; margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--color-border); }
+  h3 { font-size: 15px; line-height: 20px; font-weight: 600; margin: 24px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--color-accent); text-underline-offset: 2px; }
+  a:hover { color: var(--color-accent-hover); }
+  a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; border-radius: 4px; }
+  strong { font-weight: 600; }
+  .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; padding: 16px; margin: 0 0 16px; }
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+  .note { background: var(--color-accent-soft); border-radius: 8px; padding: 16px; margin: 0 0 16px; }
+  .table-wrap { overflow-x: auto; margin: 0 0 16px; border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 20px; }
+  th { background: var(--color-sunken); text-align: left; font-weight: 500; font-size: 13px; color: var(--color-text-2); padding: 8px 12px; }
+  td { padding: 10px 12px; border-top: 1px solid var(--color-border); vertical-align: top; }
+  .preencher { background: var(--color-warning-bg); color: var(--color-warning-text); font-family: var(--font-mono); font-size: 13px; font-weight: 500; padding: 1px 6px; border-radius: 4px; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+  nav.toc li { margin: 0 0 4px; break-inside: avoid; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--color-border); color: var(--color-text-3); font-size: 13px; line-height: 20px; }
+  footer a { margin-right: 16px; }
+  @media (max-width: 560px) { nav.toc ol { columns: 1; } }
+  @media (min-width: 768px) { .page { padding: 48px 32px 64px; } body { font-size: 15px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="brand">
+    <svg class="symbol" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1C1B18"/><line x1="7" y1="16" x2="25" y2="16" stroke="#5E5A52" stroke-width="1"/><circle cx="9" cy="16" r="3" fill="#F7F6F3"/><circle cx="16" cy="16" r="3" fill="#F7F6F3"/><circle cx="23" cy="16" r="2.5" fill="#1C1B18" stroke="#4FA8AC" stroke-width="1.5"/></svg>
+    <a class="logo" href="https://yuhoo.xyz">followup</a>
+  </header>
+
+  <main>
+    <h1>Exclusão de dados</h1>
+    <p class="meta">Vigente desde 01/10/2026 · Versão 1.0</p>
+    <p class="lead">Você pode pedir a exclusão dos seus dados pessoais do Followup a qualquer momento. Esta página explica como pedir, o que é apagado e o que a lei obriga a guardar.</p>
+
+    <h2 id="como-pedir">1. Como pedir a exclusão</h2>
+    <div class="card">
+      <p>Envie um e-mail para <a href="mailto:hello@yuhoo.xyz?subject=Exclus%C3%A3o%20de%20dados%20-%20Followup"><strong>hello@yuhoo.xyz</strong></a> com o assunto:</p>
+      <p><strong>Exclusão de dados - Followup</strong></p>
+      <p>No e-mail, informe:</p>
+      <ul>
+        <li>seu nome;</li>
+        <li>o e-mail e o telefone que podem estar ligados aos seus dados;</li>
+        <li>se você é <strong>usuário</strong> do sistema (trabalha numa empresa que usa o Followup) ou <strong>lead</strong> (foi contatado por uma imobiliária), e o nome da empresa, se souber.</li>
+      </ul>
+    </div>
+    <p>Para proteger você, podemos pedir uma confirmação de identidade antes de apagar. Nunca vamos pedir sua senha.</p>
+
+    <h2 id="facebook">2. Se você conectou o Followup ao Facebook</h2>
+    <p>Se você conectou sua conta da Meta ao Followup para receber leads de anúncios, também pode remover o acesso sozinho:</p>
+    <ul>
+      <li><strong>No Followup:</strong> em Configurações → Integrações → Meta, clique em <strong>Desconectar</strong>. As chaves de acesso da Meta são apagadas na hora e as páginas deixam de enviar leads.</li>
+      <li><strong>No Facebook:</strong> em Configurações e privacidade → Configurações → Integrações comerciais (ou Apps e sites), remova o app. Isso corta o acesso pelo lado da Meta.</li>
+    </ul>
+    <p>Para apagar também o nome da conta, as páginas e os formulários registrados, envie o e-mail descrito acima.</p>
+
+    <h2 id="o-que-apaga">3. O que é apagado</h2>
+    <h3>Se você é usuário do sistema</h3>
+    <ul>
+      <li>sua conta de acesso e sua senha;</li>
+      <li>seu nome, e-mail e convites recebidos;</li>
+      <li>dados da conexão com a Meta feita por você.</li>
+    </ul>
+    <p>Os leads e o histórico de atendimento pertencem à imobiliária em que você trabalha e continuam com ela.</p>
+
+    <h3>Se você é lead de uma imobiliária</h3>
+    <ul>
+      <li>seu nome, telefone, e-mail e perfis de Instagram e LinkedIn;</li>
+      <li>dados de interesse no imóvel, campos personalizados e observações;</li>
+      <li>respostas de formulários de anúncios e dados de origem, como campanha e anúncio;</li>
+      <li>tarefas, tentativas de contato, oportunidades e evidências ligadas a você.</li>
+    </ul>
+    <p>Nesse caso, a imobiliária é a controladora dos seus dados. Nós encaminhamos seu pedido a ela e fazemos a exclusão no sistema assim que for confirmado.</p>
+
+    <h2 id="o-que-fica">4. O que precisa ser mantido por lei</h2>
+    <p>Alguns registros não podem ser apagados na hora. Eles ficam guardados só pelo tempo necessário e não são usados para mais nada:</p>
+    <ul>
+      <li><strong>Registros de acesso ao sistema</strong>, como data, hora e IP de login: por 6 meses, como exige o Marco Civil da Internet (art. 15).</li>
+      <li><strong>Seu pedido de não ser contatado</strong>: guardamos o telefone ou e-mail na lista de bloqueio, se você quiser, para que a imobiliária não volte a procurar você.</li>
+      <li><strong>Trilha de auditoria</strong>: registros de quem fez o quê, mantidos como prova de que o tratamento foi correto e de que seu pedido foi atendido (LGPD, art. 16 e art. 7º, VI).</li>
+      <li><strong>Documentos fiscais e contratuais</strong> da empresa cliente, pelos prazos da lei.</li>
+      <li><strong>Dados exigidos por ordem judicial</strong> ou por autoridade.</li>
+    </ul>
+
+    <h2 id="prazo">5. Prazo de resposta</h2>
+    <p>Respondemos ao seu pedido em <strong>até 15 dias</strong> a partir do recebimento. A resposta confirma o que foi apagado e, se algo precisar ser mantido, explica o motivo e por quanto tempo.</p>
+    <p>Se não ficar satisfeito com a resposta, você pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD) em <a href="https://www.gov.br/anpd">gov.br/anpd</a>.</p>
+
+    <h2 id="contato">6. Contato</h2>
+    <div class="card">
+      <p><strong>YUHOO NET LTDA</strong> · CNPJ 12.898.470/0001-01<br>
+      Endereço: <mark class="preencher">[PREENCHER]</mark><br>
+      E-mail: <a href="mailto:hello@yuhoo.xyz">hello@yuhoo.xyz</a> · Site: <a href="https://yuhoo.xyz">https://yuhoo.xyz</a></p>
+    </div>
+    <p>Mais detalhes na <a href="privacidade.html">Política de Privacidade</a>.</p>
+  </main>
+
+  <footer>
+    <p><a href="privacidade.html">Política de Privacidade</a><a href="termos.html">Termos de Uso</a><a href="exclusao-de-dados.html">Exclusão de dados</a></p>
+    <p>Followup · YUHOO NET LTDA · CNPJ 12.898.470/0001-01</p>
+  </footer>
+</div>
+</body>
+</html>
